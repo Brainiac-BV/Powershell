@@ -1,0 +1,1 @@
+Get-mailbox “(user's name)” | Set-mailboxautoreplyconfiguration –AutoReplyState Enabled –ExternalMessage “(OOO message)” -internalmessage "(OOO message)"

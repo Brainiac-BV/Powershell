@@ -1,0 +1,1 @@
+get-messagetrackinglog -start "04/11/2016" -end "04/13/2016" -sender "mailings@odey.com" -recipients "scott.spencer@aberdeen-asset.com" |select messagesubject, sender, recipients, timestamp, eventid
