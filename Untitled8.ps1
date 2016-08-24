@@ -1,6 +1,6 @@
 ﻿#set variables for path, admin account, etc
-$one_note_path = "/a \\phlbuild01\software\microsoft\Office\Office 2010 Professional Plus\OneNote.en-us\OneNoteMUI.msi /quiet /norestart"
-$computers = Get-Content "c:\BSONI.txt"
+$one_note_path = "/a \\\software\microsoft\Office\Office 2010 Professional Plus\OneNote.en-us\OneNoteMUI.msi /quiet /norestart"
+$computers = Get-Content ""
 $msi = "msiexec.exe"
 
 #start install
