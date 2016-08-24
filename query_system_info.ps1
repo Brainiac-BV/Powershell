@@ -1,11 +1,11 @@
 ﻿#set variables for site locations
-#Get-QADComputer -SearchRoot "OU=Philadelphia Market Street,OU=Desktop,OU=Computer Accounts,DC=aberdeen,DC=aberdeen-asset,DC=com" | select name |Export-Csv c:\phlpcs2.csv
-#Get-QADComputer -SearchRoot "OU=Toronto Bay Street,OU=Desktop,OU=Computer Accounts,DC=aberdeen,DC=aberdeen-asset,DC=com" | select name |Out-File "c:\torpcs"
-#Get-QADComputer -SearchRoot "OU=Sao Paulo Sao Gabriel,OU=Desktop,OU=Computer Accounts,DC=aberdeen,DC=aberdeen-asset,DC=com" |select name | out-file c:\saopcs
-$phl_pc = Get-Content C:\phlpcs2.csv
-$tor_pc = Get-Content C:\torpcs.txt
-$sao_pc = get-content C:\saopcs.txt
-$output = 'C:\TOR_PC_infoz.csv'
+#Get-QADComputer -SearchRoot "OU=,OU=,OU=,DC=,DC=,DC=" | select name |Export-Csv c:\.csv
+#Get-QADComputer -SearchRoot "OU=,OU=,OU=,DC=,DC=,DC=" | select name |Out-File "c:\.txt"
+#Get-QADComputer -SearchRoot "OU=,OU=,OU=,DC=,DC=,DC=" |select name | out-file c:\.txt
+$phl_pc = Get-Content C:\.csv
+$tor_pc = Get-Content C:\.txt
+$sao_pc = get-content C:\.txt
+$output = 'C:\.csv'
 
 
 #retrieve info and place in a variable
