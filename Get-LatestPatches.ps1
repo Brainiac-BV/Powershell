@@ -8,14 +8,14 @@ Function Get-LatestPatches {
    WITHINLAST - Options are 7/10/15 Days
 
    When you launch the script, it will ask you to enter password.
-   Enter username - as Aberdeen\Admin-SC, and your Admin password.
+   Enter username - .
 
 .EXAMPLE
-   Get-LatestPatches -computerName "PHL12497"
+   Get-LatestPatches -computerName ""
 .EXAMPLE
-   Get-LatestPatches -computerName "PHL12497" | Export-Csv -NoTypeInformation -Append "PatchesInLast30days.csv"
+   Get-LatestPatches -computerName "" | Export-Csv -NoTypeInformation -Append "PatchesInLast30days.csv"
 .EXAMPLE
-   Get-LatestPatches -computerName "PHL12497" -WithinLast 10 | Export-Csv -NoTypeInformation -Append "PatchesInLast10days.csv"
+   Get-LatestPatches -computerName "" -WithinLast 10 | Export-Csv -NoTypeInformation -Append "PatchesInLast10days.csv"
 #>
 
 [CmdletBinding()]
@@ -38,6 +38,6 @@ Process {
     Get-HotFix -ComputerName $computerName | Where {$_.InstalledOn -gt $dateAfter} | select CSName,HotFixID,Caption,InstalledBy,InstalledOn
     }
 }
-Get-LatestPatches -computerName "PHL12497" | select -ExpandProperty Caption | foreach {
+Get-LatestPatches -computerName "" | select -ExpandProperty Caption | foreach {
 Start-Process iexplore $_
 }
