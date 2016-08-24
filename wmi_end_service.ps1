@@ -1,3 +1,3 @@
-﻿Get-Process -ComputerName phl12475
-(gwmi win32_service -ComputerName phl13718 -Filter "name='winrm'").
+﻿Get-Process -ComputerName 
+(gwmi win32_service -ComputerName  -Filter "name='winrm'").
 appwiz.cpl
