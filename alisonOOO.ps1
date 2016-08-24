@@ -1,1 +1,0 @@
-Get-mailbox “Miranda Depto” | Set-mailboxautoreplyconfiguration –AutoReplyState Enabled –ExternalMessage “I am currently out of the office. Please contact RFP Services - Americas for assistance.” -internalmessage "I am currently out of the office. Please contact RFP Services - Americas for assistance."
